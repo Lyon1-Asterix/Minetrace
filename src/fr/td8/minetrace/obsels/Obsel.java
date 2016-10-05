@@ -3,8 +3,9 @@ package fr.td8.minetrace.obsels;
 import org.json.simple.JSONObject;
 
 import fr.td8.minetrace.Utils;
+import fr.td8.minetrace.json.JSONable;
 
-public class Obsel
+public class Obsel implements JSONable
 {
 	private static int currentId = 1;
 
@@ -18,16 +19,11 @@ public class Obsel
 		this.start = start;
 	}
 
-	public JSONObject toJSON()
+	public JSONObject toJSONObject()
 	{
-		//TODO mettre des guillemets partout quand pas un int
-		
-//		StringBuilder sb = new StringBuilder();
 		JSONObject obj = new JSONObject();
-//		sb.append("{\n");
 		StringBuilder fields = new StringBuilder();
 		Class c = getClass();
-//		sb.append("\ttype: "+ c.getSimpleName() + ",\n");
 		obj.put("type", c.getSimpleName());
 		do
 		{

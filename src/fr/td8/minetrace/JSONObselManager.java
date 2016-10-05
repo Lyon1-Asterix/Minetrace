@@ -55,7 +55,7 @@ public class JSONObselManager
 		JSONArray array = new JSONArray();
 		while ((o = obsels.poll()) != null)
 		{
-			array.add(o.toJSON());
+			array.add(o.toJSONObject());
 			// System.out.println(o.toJSON());
 		}
 		String name = fileName + "_" + (new Date().getTime()) + ".json";
