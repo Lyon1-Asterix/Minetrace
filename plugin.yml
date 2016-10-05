@@ -5,7 +5,7 @@ author: td8.subset(alf)
 description: rien que pour Pierre-Antoine
 commands:
   trace:
-    description: Contrôle le lancement et l'arrêt trace
+    description: Contrôle le lancement, l'arrêt et l'écriture des trace
     usage: /trace <start|stop|write>
     permission: minetrace.trace
     permission: Désolé, mais tu n'es pas... un traceur (ça sonne bien non ?)
