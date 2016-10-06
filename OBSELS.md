@@ -1,4 +1,5 @@
 # Obsels collectés
+Ici sont décrits uniquement les obsels. Les types de données sont décrits dans TYPES.md
 ## BlockBreakObsel
 - start (int)
 - blockName (string)
