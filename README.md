@@ -20,6 +20,6 @@ Les fichiers se situe dans le repertoire de votre serveur Spigot :
 
 ## Build
 Pour build le projet, utilisez la commande MAven suivante :
-`mvn compile`
+`mvn package`
 
 Ou utilisez votre IDE favoris.
