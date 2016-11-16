@@ -18,8 +18,12 @@ Les fichiers se situe dans le repertoire de votre serveur Spigot :
 
 `{spigotRepository}/plugins/minetrace`
 
-## Build
-Pour build le projet, utilisez la commande MAven suivante :
+
+## Dev
+#### Build
+Pour build le projet, utilisez la commande Maven suivante :
 `mvn package`
 
 Ou utilisez votre IDE favoris.
+
+#### Changer la version Spigot
