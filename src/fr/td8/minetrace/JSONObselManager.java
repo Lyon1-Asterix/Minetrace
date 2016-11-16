@@ -11,7 +11,7 @@ import org.json.simple.JSONArray;
 
 import fr.td8.minetrace.obsels.Obsel;
 
-public class JSONObselManager
+class JSONObselManager
 {
 	private static JSONObselManager instance = null;
 	private Queue<Obsel> obsels;
@@ -24,7 +24,7 @@ public class JSONObselManager
 
 	private JSONObselManager()
 	{
-		this("/home/gus3000/minetrace", 100); // peut-être changer
+		this("./plugins//minetrace/minetrace", 100); // peut-être changer
 	}
 
 	private JSONObselManager(String fileName, int nbObselsMax)
@@ -36,7 +36,7 @@ public class JSONObselManager
 		this.running=true; //TODO changer pour la prod
 	}
 
-	public void addObsel(Obsel o)
+	void addObsel(Obsel o)
 	{
 		if(!running)
 			return;
@@ -49,7 +49,7 @@ public class JSONObselManager
 
 	}
 
-	public void writeObsels()
+	void writeObsels()
 	{
 		Obsel o;
 		JSONArray array = new JSONArray();
@@ -63,6 +63,7 @@ public class JSONObselManager
 		File f = new File(name);
 		try
 		{
+			f.getParentFile().mkdirs();
 			f.createNewFile();
 		} catch (IOException e1)
 		{
@@ -94,17 +95,17 @@ public class JSONObselManager
 		running = true;
 	}
 	
-	public void stop()
+	void stop()
 	{
 		running = false;
 	}
 	
-	public String getLastFileWritten()
+	String getLastFileWritten()
 	{
 		return lastFileWritten;
 	}
 	
-	public static JSONObselManager getInstance()
+	static JSONObselManager getInstance()
 	{
 		if (instance == null)
 			instance = new JSONObselManager();

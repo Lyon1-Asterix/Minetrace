@@ -12,3 +12,18 @@ La commande principale du programme est la commande *trace*. Celle-ci peut être
 La documentation des commandes est disponible depuis la commande *help* ("/help trace" pour des informations sur la commande *trace*).
 
 Les obsels créés sont décrits dans OBSELS.md
+
+## Récupération des fichiers
+Les fichiers se situe dans le repertoire de votre serveur Spigot :
+
+`{spigotRepository}/plugins/minetrace`
+
+
+## Dev
+#### Build
+Pour build le projet, utilisez la commande Maven suivante :
+`mvn package`
+
+Ou utilisez votre IDE favoris.
+
+#### Changer la version Spigot

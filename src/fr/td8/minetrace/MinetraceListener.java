@@ -43,7 +43,7 @@ public class MinetraceListener implements Listener
 	 * craft
 	 * 
 	 */
-	private final String FILENAME = "/home/gus3000/minetrace.json";
+	private final String FILENAME = "./plugins//minetrace/minetrace/minetrace.json";
 
 	@EventHandler
 	public void onBlockBreak(BlockBreakEvent event)
