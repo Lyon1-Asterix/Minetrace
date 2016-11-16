@@ -12,3 +12,9 @@ La commande principale du programme est la commande *trace*. Celle-ci peut être
 La documentation des commandes est disponible depuis la commande *help* ("/help trace" pour des informations sur la commande *trace*).
 
 Les obsels créés sont décrits dans OBSELS.md
+
+## Build
+Pour build le projet, utilisez la commande MAven suivante :
+`mvn compile`
+
+Ou utilisez votre IDE favoris.
