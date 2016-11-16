@@ -24,7 +24,7 @@ public class JSONObselManager
 
 	private JSONObselManager()
 	{
-		this("/home/gus3000/minetrace", 100); // peut-être changer
+		this("./plugins//minetrace/minetrace", 100); // peut-être changer
 	}
 
 	private JSONObselManager(String fileName, int nbObselsMax)
